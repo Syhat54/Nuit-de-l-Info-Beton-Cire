@@ -1,0 +1,10 @@
+Project Name: Nuit de L'info 2025 - Béton Ciré
+License: GNU Affero General Public License v3.0 (AGPL-3.0)
+
+Copyright (c) 2025 BETON_CIRE
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, version 3 of the License.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+The GNU Affero General Public License: https://www.gnu.org/licenses/
