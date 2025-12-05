@@ -1,60 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BetonCire</title>
+    <title>Chroniques NIRD - Résistance 2025</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
+<body id="haut">
     <header id="header">
-        <h1> <a href="index.html">BétonCiré</a></h1>
-
+        <h1><a href="index.html">Village NIRD</a></h1>
         <nav>
             <ul>
-                <li><a href="index.html">NIRD</a></li>
+                <li><a href="simulation.html">Le Jeu</a></li>
                 <li><a href="team.html">L'équipe</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main id="main">
-        <p>ICI METTRE LE MAIN SUR LE DÉFI NATIONAL !!!</p>
+        <section class="text-center text-white" style="width: 80%; max-width: 800px; margin: 0 auto;">
+            <h2 style="font-size: 2.5rem; background: linear-gradient(90deg, #f566ff, #F9DE2C); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                L'Heure de la Révolte
+            </h2>
+            <p style="font-size: 1.2rem; line-height: 1.8;">
+                <strong>2025.</strong> L'Empire des GAFAM a décrété la fin de Windows 10. 
+                Des millions d'ordinateurs, pourtant fonctionnels, sont condamnés à la décharge.
+            </p>
+            <p style="font-size: 1.1rem; opacity: 0.9;">
+                Mais dans l'ombre, un village d'irréductibles établissements scolaires résiste encore et toujours.
+            </p>
+        </section>
+
+        <div class="timeline">
+            <div class="container-timeline left">
+                <div class="content-timeline">
+                    <h2>2015</h2>
+                    <p><strong>Le Piège</strong><br>Sortie de Windows 10. Les écoles s'équipent. La dépendance commence.</p>
+                </div>
+            </div>
+            
+            <div class="container-timeline right">
+                <div class="content-timeline">
+                    <h2>2020</h2>
+                    <p><strong>Le Confinement</strong><br>L'école bascule entièrement sur les outils Big Tech (Teams, Zoom). Nos données partent en Californie.</p>
+                </div>
+            </div>
+
+            <div class="container-timeline left">
+                <div class="content-timeline">
+                    <h2>Oct. 2025</h2>
+                    <p><strong>L'Obsolescence</strong><br>L'Empire déclare vos PC "périmés". Il faut tout jeter. Le coût écologique est désastreux.</p>
+                </div>
+            </div>
+
+            <div class="container-timeline right">
+                <div class="content-timeline">
+                    <h2>Cette Nuit</h2>
+                    <p><strong>La Résistance (NIRD)</strong><br>On installe Linux. On recycle. On reprend le pouvoir.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="text-center mt-20 mb-20">
+            <a href="contact.html">
+                <button>Rejoindre la lutte</button>
+            </a>
+        </section>
     </main>
 
     <footer id="footer">
-        <img src="beton.jpg" alt="béton ciré en force">
+        <img src="beton.jpg" alt="Résistance">
         <div>
-            <h2>L'équipe Béton Ciré</h2>
+            <h2>L'équipe Nuit de l'Info</h2>
             <ul>
-                <li>Jean Fontaine</li>
-                <li>Tahys Hervieu</li>
-                <li>Julie Sirieix</li>
+                <li><a href="https://jeanfontaine.myportfolio.com/">Jean Fontaine</a></li>
+                <li><a href="https://tahyshervieu.netlify.app/">Tahys Hervieu</a></li>
+                <li><a href="CV-JulieSirieix-StageDéveloppementWeb.pdf" download>Julie Sirieix</a></li>
             </ul>
-            <a href="#haut">retour en haut</a>
+            <a href="#haut">Remonter le temps</a>
         </div>
     </footer>
+
     <script src="form.js"></script>
     <div id="chatbot-wrapper">
         <div id="chat-window">
-            <iframe src="https://typebot.co/basic-chat-gpt-8nzedje" width="100%" height="100%" frameborder="0">
-            </iframe>
+            <iframe src="https://typebot.co/basic-chat-gpt-8nzedje?backgroundColor=transparent" width="100%" height="100%" frameborder="0"></iframe>
         </div>
-
-        <button id="chat-toggle" onclick="toggleChat()">
-            <svg id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-            </svg>
-            <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" style="display:none;">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
+        <button id="chat-toggle">
+            <svg id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
     </div>
 </body>
-
 </html>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Résultats - BetonCire</title>
+    <title>BetonCire</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="haut">
-    <div id="pixel-grid"></div>
-    <div id="retro-message"></div>
 
+<body id="haut">
     <header id="header">
-        <h1><a href="index.html">BétonCiré</a></h1>
+        <h1> <a href="index.html">BétonCiré</a></h1>
+
         <nav>
             <ul>
                 <li><a href="index.html">NIRD</a></li>
@@ -20,15 +20,8 @@
             </ul>
         </nav>
     </header>
-
     <main id="main">
-        <form id="resultats-container" class="text-center">
-            <h2 class="text-white text-uppercase">Bien reçu !</h2>
-            <div id="contenu-reponse"></div>
-            <a href="contact.html">
-                <button type="button" class="mt-20">Retour</button>
-            </a>
-        </form>
+        <p>ICI METTRE LE MAIN SUR LE DÉFI NATIONAL !!!</p>
     </main>
 
     <footer id="footer">
@@ -43,16 +36,25 @@
             <a href="#haut">retour en haut</a>
         </div>
     </footer>
-
     <script src="form.js"></script>
     <div id="chatbot-wrapper">
         <div id="chat-window">
-            <iframe src="https://typebot.co/basic-chat-gpt-8nzedje" width="100%" height="100%" frameborder="0"></iframe>
+            <iframe src="https://typebot.co/basic-chat-gpt-8nzedje" width="100%" height="100%" frameborder="0">
+            </iframe>
         </div>
-        <button id="chat-toggle">
-            <svg id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-            <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+
+        <button id="chat-toggle" onclick="toggleChat()">
+            <svg id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
         </button>
     </div>
 </body>
+
 </html>

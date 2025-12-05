@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BetonCire</title>
+    <title>BetonCire - Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
+<body id="haut">
     <header id="header">
-        <h1> <a href="index.html">BétonCiré</a></h1>
-
+        <h1><a href="index.html">BétonCiré</a></h1>
         <nav>
             <ul>
                 <li><a href="index.html">NIRD</a></li>
@@ -21,8 +18,14 @@
         </nav>
     </header>
     <main id="main">
-        <form action="resultats.html" method="GET"> <label for="name">Nom:</label>
-            <input type="text" id="name" name="name" required>
+        <h2>Contactez-nous !</h2>
+        <form action="resultats.html" method="GET"> 
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required readonly style="cursor: pointer;" placeholder="Cliquez pour utiliser le clavier sécurisé">
+            
+            <div id="virtual-keyboard" style="display: none;">
+                <div id="keyboard-grid"></div>
+            </div>
 
             <div class="range-container">
                 <label for="age">Age : <span id="valeurAge">??</span> ans</label>
@@ -42,9 +45,9 @@
         <div>
             <h2>L'équipe Béton Ciré</h2>
             <ul>
-                <li>Jean Fontaine</li>
-                <li>Tahys Hervieu</li>
-                <li>Julie Sirieix</li>
+                <li><a href="https://jeanfontaine.myportfolio.com/">Jean Fontaine</a></li>
+                <li><a href="https://tahyshervieu.netlify.app/">Tahys Hervieu</a></li>
+                <li><a href="CV-JulieSirieix-StageDéveloppementWeb.pdf" download>Julie Sirieix</a></li>
             </ul>
             <a href="#haut">retour en haut</a>
         </div>
@@ -52,22 +55,12 @@
     <script src="form.js"></script>
     <div id="chatbot-wrapper">
         <div id="chat-window">
-            <iframe src="https://typebot.co/basic-chat-gpt-8nzedje" width="100%" height="100%" frameborder="0">
-            </iframe>
+            <iframe src="https://typebot.co/basic-chat-gpt-8nzedje" width="100%" height="100%" frameborder="0"></iframe>
         </div>
-
-        <button id="chat-toggle" onclick="toggleChat()">
-            <svg id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-            </svg>
-            <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" style="display:none;">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
+        <button id="chat-toggle">
+            <svg id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
     </div>
 </body>
-
 </html>
