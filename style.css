@@ -1,24 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
 
-* {
-    cursor:url(coeurB.cur),auto;
-}
-::selection {
-    background-color: #EE2FFD;
-    color: white;
-    cursor:url(coeur.cur),auto;
-}
 
 body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
     background: #0d0317;
-    
+
 }
+
 p {
     color: var(--rosepale);
 }
+
 /* ———————————————————————————
      HEADER — 
 ———————————————————————————— */
@@ -45,7 +39,7 @@ p {
 
 /* TITRE */
 #header h1 {
-    font-weight: 900;               
+    font-weight: 900;
     font-size: 1.8rem;
     margin: 0;
     background: linear-gradient(90deg, #f566ff, #F99EB1, #F9DE2C);
@@ -61,12 +55,12 @@ p {
     gap: 25px;
     margin: 0;
     padding: 0;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 #header nav a {
     text-decoration: none;
-    font-weight: 500;               
+    font-weight: 500;
     font-style: italic;
     color: #ffffff;
     transition: 0.2s;
@@ -84,17 +78,25 @@ main {
     padding-top: 130px;
 }
 
+main h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
 form {
     width: 80%;
-    max-width: 800px; 
-    margin: 40px auto; 
+    max-width: 800px;
+    margin: 40px auto;
     padding: 40px;
 
-    background: rgba(255, 255, 255, 0.25); 
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    
-    border-radius: 25px; 
+
+    border-radius: 25px;
     box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
 
     display: flex;
@@ -105,7 +107,7 @@ form label {
     font-weight: 600;
     margin-bottom: 8px;
     margin-top: 20px;
-    color: #ffffff; 
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 1px;
@@ -115,19 +117,19 @@ form label:first-of-type {
     margin-top: 0;
 }
 
-form input, 
+form input,
 form textarea {
     font-family: "Montserrat", sans-serif;
     padding: 15px;
     border-radius: 15px;
-    border: 2px solid transparent; 
-    background: rgba(255, 255, 255, 0.9); 
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.9);
     font-size: 1rem;
     color: #333;
     transition: all 0.3s ease;
 }
 
-form input:not([type="range"]):focus, 
+form input:not([type="range"]):focus,
 form textarea:focus {
     outline: none;
     background: #ffffff;
@@ -138,38 +140,38 @@ form textarea:focus {
 .range-container {
     margin-top: 20px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 form textarea {
     min-height: 120px;
-    resize: vertical; /
+    resize: vertical;/
 }
 
 form button {
     margin-top: 35px;
     padding: 15px 30px;
-    
+
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-size: 1.1rem;
     text-transform: uppercase;
     color: white;
-    
+
     border: none;
-    border-radius: 50px; 
+    border-radius: 50px;
     cursor: pointer;
 
     background: linear-gradient(90deg, #f566ff, #F99EB1, #F9DE2C);
-    background-size: 200% auto; 
-    
+    background-size: 200% auto;
+
     box-shadow: 0 5px 20px rgba(245, 102, 255, 0.4);
     transition: 0.4s;
 }
 
 form button:hover {
-    background-position: right center; 
-    transform: translateY(-3px); 
+    background-position: right center;
+    transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(249, 158, 177, 0.6);
 }
 
@@ -185,33 +187,33 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 10px;
     cursor: pointer;
-    
-    background: rgba(255, 255, 255, 0.5); 
+
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2); 
+
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 24px;
     width: 24px;
-    
-    margin-top: -7px; 
-    
+
+    margin-top: -7px;
+
     border-radius: 50%;
     cursor: pointer;
-    
+
     background: linear-gradient(135deg, #f566ff, #F9DE2C);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    border: 2px solid #fff; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    border: 2px solid #fff;
     transition: transform 0.1s ease;
 }
 
 input[type=range]:active::-webkit-slider-thumb {
     transform: scale(1.2);
-    background: #F9DE2C; 
+    background: #F9DE2C;
 }
 
 input[type=range]::-moz-range-track {
@@ -229,7 +231,272 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
     cursor: pointer;
     background: linear-gradient(135deg, #f566ff, #F9DE2C);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ———————————————————————————
+     MODE RETR0 — 
+———————————————————————————— */
+body.retro {
+    background: #000000 !important;
+    font-family: "Press Start 2P", cursive;
+    image-rendering: pixelated;
+    background-image:
+        repeating-linear-gradient(0deg, rgba(0, 255, 0, 0.03) 0px, transparent 1px, transparent 2px, rgba(0, 255, 0, 0.03) 3px),
+        repeating-linear-gradient(90deg, rgba(0, 255, 0, 0.03) 0px, transparent 1px, transparent 2px, rgba(0, 255, 0, 0.03) 3px);
+}
+
+body.retro::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(0deg,
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15) 1px,
+            transparent 1px,
+            transparent 2px);
+    pointer-events: none;
+    z-index: 10000;
+    animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+body.retro #header {
+    background: #1a1a1a !important;
+    border: 4px solid #00ff00 !important;
+    border-radius: 0 !important;
+    box-shadow: 0 0 30px #00ff00, inset 0 0 20px rgba(0, 255, 0, 0.1) !important;
+}
+
+body.retro #header h1 {
+    font-size: 1.4rem;
+    background: none !important;
+    color: #00ff00 !important;
+    -webkit-text-fill-color: #00ff00 !important;
+    text-shadow: 3px 3px #003300, 0 0 10px #00ff00 !important;
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+
+    0%,
+    90%,
+    100% {
+        transform: translate(0);
+        text-shadow: 3px 3px #003300, 0 0 10px #00ff00;
+    }
+
+    92% {
+        transform: translate(-2px, 2px);
+        text-shadow: 3px 3px #ff0000, 0 0 10px #00ff00;
+    }
+
+    94% {
+        transform: translate(2px, -2px);
+        text-shadow: 3px 3px #0000ff, 0 0 10px #00ff00;
+    }
+}
+
+body.retro #header nav a {
+    color: #00ff00 !important;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+body.retro #header nav a:hover {
+    color: #ffff00 !important;
+    text-shadow: 0 0 15px #ffff00;
+}
+
+body.retro form {
+    background: #0a0a0a !important;
+    border: 5px double #00ff00 !important;
+    border-radius: 0 !important;
+    box-shadow: 0 0 40px #00ff00, inset 0 0 30px rgba(0, 255, 0, 0.05) !important;
+    position: relative;
+}
+
+body.retro form::before {
+    content: '★ T\'ES VIEUX ! MODE RETRO ACTIVÉ ★';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    padding: 8px 25px;
+    border: 3px solid #00ff00;
+    color: #00ff00;
+    font-size: 1rem;
+    animation: blink 1s infinite;
+    white-space: nowrap;
+}
+
+@keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0.3;
+    }
+}
+
+body.retro h2 {
+    color: #00ff00 !important;
+    text-shadow: 3px 3px #003300 !important;
+    font-size: 1.4rem !important;
+}
+
+body.retro p,
+body.retro strong {
+    color: #00ff00 !important;
+    font-size: 1.2rem !important;
+}
+
+body.retro hr {
+    border-top: 2px solid #00ff00 !important;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+body.retro button {
+    font-family: "Press Start 2P", cursive !important;
+    background: #00ff00 !important;
+    color: #000 !important;
+    border: 5px solid #003300 !important;
+    border-radius: 0 !important;
+    font-size: 1.2rem !important;
+    box-shadow: 0 0 30px #00ff00, 5px 5px 0 #003300 !important;
+}
+
+body.retro button:hover {
+    background: #ffff00 !important;
+    box-shadow: 0 0 40px #ffff00, 3px 3px 0 #003300 !important;
+}
+
+body.retro #footer {
+    background: #0a0a0a !important;
+    border: 5px solid #00ff00 !important;
+    border-radius: 0 !important;
+    box-shadow: 0 0 40px #00ff00 !important;
+}
+
+body.retro #footer img {
+    filter: contrast(1.5) brightness(0.8);
+    border-right: 5px solid #00ff00;
+}
+
+body.retro #footer h2 {
+    color: #00ff00 !important;
+    font-size: 1.4rem !important;
+    text-shadow: 3px 3px #003300 !important;
+}
+
+body.retro #footer li {
+    color: #00ff00 !important;
+    font-size: 1.2rem !important;
+    list-style: none;
+}
+
+body.retro #footer li::before {
+    content: '▸ ';
+}
+
+body.retro #footer a {
+    color: #00ff00 !important;
+    font-size: 0.7rem !important;
+    font-style: normal;
+}
+
+body.retro #footer a:hover {
+    color: #ffff00 !important;
+    text-shadow: 0 0 15px #ffff00;
+}
+
+#pixel-grid {
+    display: none;
+}
+
+body.retro #pixel-grid {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.03;
+    background-image:
+        repeating-linear-gradient(0deg,
+            #00ff00 0px,
+            transparent 1px,
+            transparent 4px,
+            #00ff00 5px),
+        repeating-linear-gradient(90deg,
+            #00ff00 0px,
+            transparent 1px,
+            transparent 4px,
+            #00ff00 5px);
+}
+
+#retro-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: #00ff00;
+    text-shadow: 0 0 20px #00ff00, 3px 3px #003300;
+    z-index: 10001;
+    pointer-events: none;
+    opacity: 0;
+    text-align: center;
+    line-height: 1.8;
+    font-family: "Press Start 2P", cursive;
+}
+
+body.retro #retro-message.show {
+    animation: retroAppear 3s ease-out forwards;
+}
+
+@keyframes retroAppear {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
 
 /* ———————————————————————————
@@ -240,22 +507,23 @@ input[type=range]::-moz-range-thumb {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    z-index: 9999; 
+    z-index: 9999;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; 
+    align-items: flex-end;
     gap: 15px;
 }
+
 #chat-toggle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    
+
     background: linear-gradient(135deg, #f566ff, #F9DE2C);
     box-shadow: 0 4px 15px rgba(245, 102, 255, 0.5);
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,7 +533,7 @@ input[type=range]::-moz-range-thumb {
 #chat-toggle svg {
     width: 30px;
     height: 30px;
-    stroke: white; 
+    stroke: white;
 }
 
 #chat-toggle:hover {
@@ -276,27 +544,27 @@ input[type=range]::-moz-range-thumb {
 #chat-window {
     width: 400px;
     height: 600px;
-    
-    background: rgba(255, 255, 255, 0.85); 
+
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    
+
     padding: 0;
-    overflow: hidden; 
-    
+    overflow: hidden;
+
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    
-    position: fixed; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    position: fixed;
     right: 0;
     bottom: 100px;
-    
+
     opacity: 0;
     transform: translateY(20px) scale(0.9);
-    pointer-events: none; 
+    pointer-events: none;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    visibility: hidden; 
+    visibility: hidden;
 }
 
 #chat-window.open {
@@ -326,16 +594,21 @@ input[type=range]::-moz-range-thumb {
 .carousel-container {
     width: 100%;
     overflow: hidden;
-    padding: 20px 0; /* Un peu d'espace pour l'ombre des cartes */
+    padding: 20px 0;
+    /* Un peu d'espace pour l'ombre des cartes */
 }
 
 /* Le rail qui bouge */
 .carousel-track {
     display: flex;
-    gap: 40px; /* Espace entre les cartes */
-    transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1); /* Animation fluide "luxe" */
-    width: max-content; /* S'adapte au contenu */
-    padding-left: 20px; /* Petit alignement */
+    gap: 40px;
+    /* Espace entre les cartes */
+    transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    /* Animation fluide "luxe" */
+    width: max-content;
+    /* S'adapte au contenu */
+    padding-left: 20px;
+    /* Petit alignement */
 }
 
 /* ——— LA CARTE MEMBRE ——— */
@@ -344,24 +617,26 @@ input[type=range]::-moz-range-thumb {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    
+
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 25px;
     padding: 30px;
-    
-    width: 280px; /* Largeur fixe */
+
+    width: 280px;
+    /* Largeur fixe */
     text-align: center;
     color: white;
-    
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    flex-shrink: 0; /* Empêche la carte de s'écraser */
+    flex-shrink: 0;
+    /* Empêche la carte de s'écraser */
 }
 
 .team-card:hover {
     transform: translateY(-10px);
     background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 /* Photo ronde */
@@ -372,15 +647,15 @@ input[type=range]::-moz-range-thumb {
     margin: 0 auto 20px auto;
     background-size: cover;
     background-position: center;
-    border: 3px solid rgba(255,255,255,0.8);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Typographie */
 .team-card h3 {
     margin: 10px 0 5px 0;
     font-size: 1.4rem;
-    
+
     /* Dégradé texte (le même que ton h1) */
     background: linear-gradient(90deg, #f566ff, #F99EB1, #F9DE2C);
     -webkit-background-clip: text;
@@ -389,7 +664,8 @@ input[type=range]::-moz-range-thumb {
 }
 
 .team-card .role {
-    color: var(--jaune); /* Ton jaune signature */
+    color: var(--jaune);
+    /* Ton jaune signature */
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.85rem;
@@ -407,7 +683,7 @@ input[type=range]::-moz-range-thumb {
 /* ——— BOUTONS PREV / NEXT ——— */
 .carousel-btn {
     background: transparent;
-    border: 2px solid rgba(255,255,255,0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     color: white;
     font-size: 1.5rem;
     width: 50px;
@@ -415,12 +691,13 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
     cursor: pointer;
     transition: 0.3s;
-    
+
     /* Pour bien centrer la flèche */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0; /* Empêche le bouton de s'écraser */
+    flex-shrink: 0;
+    /* Empêche le bouton de s'écraser */
     z-index: 10;
 }
 
@@ -482,7 +759,7 @@ input[type=range]::-moz-range-thumb {
 
 /* TITRE */
 #footer h2 {
-    font-weight: 900;           
+    font-weight: 900;
     font-size: 1.6rem;
     margin: 0;
     color: #333;
@@ -495,7 +772,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 #footer li {
-    font-weight: 300;           
+    font-weight: 300;
     margin-bottom: 4px;
 }
 
