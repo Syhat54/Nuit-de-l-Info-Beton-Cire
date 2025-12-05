@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Équipe - BetonCire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>BetonCire</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">NIRD</a></li>
+                <li><a href="equipe.html" style="color: #F9DE2C; text-decoration: underline;">L'équipe</a></li>
+                <li><a href="contact.html" style="color: #F9DE2C; text-decoration: underline;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h2 style="text-align: center; color: white; margin-bottom: 40px; text-transform: uppercase; font-size: 2rem;">Nos Experts</h2>
+
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    
+                    <div class="team-card">
+                        <div class="card-img" style="background-image: url('jean.jpg');"></div>
+                        <h3>Jean Fontaine</h3>
+                        <p class="role">Créatif de l'équipe</p>
+                        <p class="desc">"Il donne les idées les plus tordus et inappropriées mais 1 fois sur 5 elles sont géniales..."</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="card-img" style="background-image: url('tahys.jpg');"></div>
+                        <h3>Tahys Hervieu</h3>
+                        <p class="role">Designeusee</p>
+                        <p class="desc">"Capable de transformer des idées en éléments concrets mais donnez lui un peu de temps ;)"</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="card-img" style="background-image: url('julie.jpg');"></div>
+                        <h3>Julie Sirieix</h3>
+                        <p class="role">Développeuse</p>
+                        <p class="desc">"Il faut bien quelqu'un d'intelligent dans l'équipe !"</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <img src="beton.jpg" alt="béton ciré">
+        <div>
+            <h2>L'équipe Béton Ciré</h2>
+            <ul>
+                <li>Jean Fontaine</li>
+                <li>Tahys Hervieu</li>
+                <li>Julie Sirieix</li>
+            </ul>
+        </div>
+    </footer>
+
+        <script src="form.js"></script>
+    <div id="chatbot-wrapper">
+        <div id="chat-window">
+            <iframe src="https://typebot.co/basic-chat-gpt-8nzedje" width="100%" height="100%" frameborder="0">
+            </iframe>
+        </div>
+
+        <button id="chat-toggle" onclick="toggleChat()">
+            <svg id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        
+        function moveSlide(direction) {
+            const track = document.querySelector('.carousel-track');
+            const cards = document.querySelectorAll('.team-card');
+            const totalCards = cards.length;
+            
+
+            currentIndex = currentIndex + direction;
+
+            if (currentIndex < 0) {
+                currentIndex = totalCards - 1;
+            } else if (currentIndex >= totalCards) {
+                currentIndex = 0;
+            }
+
+            const cardWidth = cards[0].offsetWidth + 40; // + marge
+            
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+    </script>
+</body>
+</html>
